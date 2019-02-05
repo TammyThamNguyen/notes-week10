@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Edit Appointment</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="title" placeholder="Note title"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="stacked">Service and Date, Time</ion-label>
+          <ion-textarea [(ngModel)]="content1" rows="4" cols="20" placeholder="Service"></ion-textarea>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Person</ion-label>
+            <ion-textarea [(ngModel)]="content2" rows="4" cols="20" placeholder="Person"></ion-textarea>
+          </ion-item>
+      <ion-button expand="block" (click)="saveNote()">Save</ion-button>
+      <ion-button expand="block" (click)="close()">Cancel</ion-button>
+    </ion-list>
+  </ion-content>
+  
